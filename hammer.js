@@ -875,7 +875,7 @@ var SINGLE_TOUCH_WINDOW_EVENTS = 'touchstart touchmove touchend touchcancel';
  * @extends Input
  */
 function SingleTouchInput() {
-    this.evTarget = SINGLE_TOUCH_TARGET_EVENTS;
+    this.evEl = SINGLE_TOUCH_TARGET_EVENTS;
     this.evWin = SINGLE_TOUCH_WINDOW_EVENTS;
     this.started = false;
 
@@ -943,7 +943,7 @@ var TOUCH_TARGET_EVENTS = 'touchstart touchmove touchend touchcancel';
  * @extends Input
  */
 function TouchInput() {
-    this.evTarget = TOUCH_TARGET_EVENTS;
+    this.evEl = TOUCH_TARGET_EVENTS;
     this.targetIds = {};
 
     Input.apply(this, arguments);
